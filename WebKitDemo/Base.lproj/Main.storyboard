@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebKitDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mu-el-9vg">
+                                <rect key="frame" x="215" y="285" width="170" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="NavigateButton"/>
+                                <state key="normal" title="Navigate to WWDC 2015"/>
+                                <connections>
+                                    <action selector="navigateToWWDC2015:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYZ-F4-YNl"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="HelloTextField" borderStyle="roundedRect" placeholder="testPlaceHolder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Exo-y6-VF1">
+                                <rect key="frame" x="238.5" y="353" width="124.5" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="helloTextField"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Exo-y6-VF1" firstAttribute="top" secondItem="4mu-el-9vg" secondAttribute="bottom" constant="38" id="BvL-qI-FYj"/>
+                            <constraint firstItem="4mu-el-9vg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Njl-7K-XQ1"/>
+                            <constraint firstItem="Exo-y6-VF1" firstAttribute="centerX" secondItem="4mu-el-9vg" secondAttribute="centerX" id="dVP-D4-pWZ"/>
+                            <constraint firstItem="4mu-el-9vg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xyH-zW-qrg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="233" y="473"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="tfm-86-CXx">
+            <objects>
+                <viewController storyboardIdentifier="UIWebViewController" id="Ryu-Tt-CPX" customClass="UIWebViewController" customModule="WebKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fUp-dG-Z8l"/>
+                        <viewControllerLayoutGuide type="bottom" id="yOQ-Qu-Tcq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mNX-7s-DID">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWy-wJ-HnD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="BWy-wJ-HnD" id="fb9-sP-TPm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8g9-Ao-W3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="472"/>
         </scene>
     </scenes>
 </document>

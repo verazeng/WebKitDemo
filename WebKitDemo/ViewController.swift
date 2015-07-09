@@ -19,7 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func navigateToWWDC2015(sender: AnyObject) {
+        let wwdcUrl = "https://developer.apple.com/videos/wwdc/2015/"
+        
+        let webVC: UIWebViewController = self.storyboard?.instantiateViewControllerWithIdentifier("UIWebViewController") as! UIWebViewController
+        webVC.url = wwdcUrl;
+        self.presentViewController(webVC, animated: true, completion: nil)
+    }
 }
 

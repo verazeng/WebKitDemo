@@ -14,6 +14,7 @@
 		D22213EB1B4BCD96000E96C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22213E91B4BCD96000E96C1 /* LaunchScreen.storyboard */; };
 		D22213F61B4BCD96000E96C1 /* WebKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22213F51B4BCD96000E96C1 /* WebKitDemoTests.swift */; };
 		D22214011B4BCD96000E96C1 /* WebKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22214001B4BCD96000E96C1 /* WebKitDemoUITests.swift */; };
+		D22214101B4BD829000E96C1 /* UIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222140E1B4BD829000E96C1 /* UIWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D22213FC1B4BCD96000E96C1 /* WebKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22214001B4BCD96000E96C1 /* WebKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitDemoUITests.swift; sourceTree = "<group>"; };
 		D22214021B4BCD96000E96C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D222140E1B4BD829000E96C1 /* UIWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D22213E71B4BCD96000E96C1 /* Assets.xcassets */,
 				D22213E91B4BCD96000E96C1 /* LaunchScreen.storyboard */,
 				D22213EC1B4BCD96000E96C1 /* Info.plist */,
+				D222140E1B4BD829000E96C1 /* UIWebViewController.swift */,
 			);
 			path = WebKitDemo;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22213E31B4BCD96000E96C1 /* ViewController.swift in Sources */,
+				D22214101B4BD829000E96C1 /* UIWebViewController.swift in Sources */,
 				D22213E11B4BCD96000E96C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
